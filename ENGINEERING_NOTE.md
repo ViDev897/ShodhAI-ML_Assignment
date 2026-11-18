@@ -1,0 +1,8 @@
+# Engineering Note
+Scope: structured JSON requirements/specification/workflow and a restricted Python routing function. Supports nested AND/OR/NOT, missing/present, equality/inequality, inclusive/exclusive comparisons and membership over declared fields.
+Semantic checks: compares normalized conditions, actions and order; parses a single if/elif/else function using AST without executing it; searches a finite declared ticket grid. This is not proof for arbitrary values or arbitrary Python.
+Trust: top-level approval metadata alone authorizes changes. Conflicting approvals cause INCOMPLETE. Fake-model findings are advisory, reference-validated and cannot override deterministic blockers. No live-model performance is claimed.
+Evaluation: 12 hand-authored cases with 3 valid, 6 defective and 3 incomplete expected labels. Labels are kept outside reviewer inputs. Metrics include denominators, false passes, false blocks, incomplete outcomes and abstentions. This is development evidence, not an independent benchmark.
+Debugging examples (deliberate fault injection): (1) Replace >=30 with >30; a 30-minute ticket reveals the boundary bug; restore >= and regression-test. (2) Put waiting rule before urgent rule; an urgent ticket waiting 30 minutes reveals precedence bug; restore urgent-first order and regression-test. These are injected examples, not historical failures.
+Ablation: disabling the advisory fake model leaves deterministic decisions unchanged; no quality benefit is demonstrated.
+AI assistance: AI helped scaffold code and documentation; candidate must run and independently verify the notebook.
