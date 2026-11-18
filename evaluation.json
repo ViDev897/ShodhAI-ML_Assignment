@@ -1,0 +1,785 @@
+{
+  "metrics": {
+    "cases": 12,
+    "correct": 5,
+    "accuracy": 0.417,
+    "false_passes_defective": 0,
+    "defective_denominator": 5,
+    "false_blocks_valid": 0,
+    "valid_denominator": 5,
+    "correct_incomplete": 2,
+    "incomplete_denominator": 2,
+    "blocker_precision": 1.0,
+    "abstentions": 9,
+    "mean_runtime_ms": 0.215
+  },
+  "cases": [
+    {
+      "case_id": "01_valid",
+      "expected": "PASS",
+      "actual": "INCOMPLETE",
+      "correct": false,
+      "runtime_ms": 0.371,
+      "report": {
+        "status": "INCOMPLETE",
+        "summary": "Reviewed 4/4",
+        "findings": [
+          {
+            "severity": "warning",
+            "rule_ref": null,
+            "artifact": "code",
+            "location": "function",
+            "evidence": "Unsupported Python comparison",
+            "correction": "Use supported restricted Python"
+          }
+        ],
+        "coverage": {
+          "requirements_total": 4,
+          "requirements_reviewed": 4,
+          "unreviewed": [
+            "Python snippet",
+            "Python behavioral comparison"
+          ]
+        },
+        "check_results": [
+          {
+            "rule_ref": "R1",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          },
+          {
+            "rule_ref": "R2",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          },
+          {
+            "rule_ref": "R3",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          },
+          {
+            "rule_ref": "R4",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          }
+        ],
+        "model": {
+          "used": true,
+          "client": "fake",
+          "error": null
+        }
+      }
+    },
+    {
+      "case_id": "02_valid_reordered",
+      "expected": "PASS",
+      "actual": "INCOMPLETE",
+      "correct": false,
+      "runtime_ms": 0.242,
+      "report": {
+        "status": "INCOMPLETE",
+        "summary": "Reviewed 4/4",
+        "findings": [
+          {
+            "severity": "warning",
+            "rule_ref": null,
+            "artifact": "code",
+            "location": "function",
+            "evidence": "Unsupported Python comparison",
+            "correction": "Use supported restricted Python"
+          }
+        ],
+        "coverage": {
+          "requirements_total": 4,
+          "requirements_reviewed": 4,
+          "unreviewed": [
+            "Python snippet",
+            "Python behavioral comparison"
+          ]
+        },
+        "check_results": [
+          {
+            "rule_ref": "R1",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          },
+          {
+            "rule_ref": "R2",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          },
+          {
+            "rule_ref": "R3",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          },
+          {
+            "rule_ref": "R4",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          }
+        ],
+        "model": {
+          "used": true,
+          "client": "fake",
+          "error": null
+        }
+      }
+    },
+    {
+      "case_id": "03_unapproved_change",
+      "expected": "PASS",
+      "actual": "INCOMPLETE",
+      "correct": false,
+      "runtime_ms": 0.239,
+      "report": {
+        "status": "INCOMPLETE",
+        "summary": "Reviewed 4/4",
+        "findings": [
+          {
+            "severity": "warning",
+            "rule_ref": null,
+            "artifact": "code",
+            "location": "function",
+            "evidence": "Unsupported Python comparison",
+            "correction": "Use supported restricted Python"
+          }
+        ],
+        "coverage": {
+          "requirements_total": 4,
+          "requirements_reviewed": 4,
+          "unreviewed": [
+            "Python snippet",
+            "Python behavioral comparison"
+          ]
+        },
+        "check_results": [
+          {
+            "rule_ref": "R1",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          },
+          {
+            "rule_ref": "R2",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          },
+          {
+            "rule_ref": "R3",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          },
+          {
+            "rule_ref": "R4",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          }
+        ],
+        "model": {
+          "used": true,
+          "client": "fake",
+          "error": null
+        }
+      }
+    },
+    {
+      "case_id": "04_threshold_defect",
+      "expected": "CHANGES_REQUIRED",
+      "actual": "INCOMPLETE",
+      "correct": false,
+      "runtime_ms": 0.217,
+      "report": {
+        "status": "INCOMPLETE",
+        "summary": "Reviewed 4/4",
+        "findings": [
+          {
+            "severity": "warning",
+            "rule_ref": null,
+            "artifact": "code",
+            "location": "function",
+            "evidence": "Unsupported Python comparison",
+            "correction": "Use supported restricted Python"
+          }
+        ],
+        "coverage": {
+          "requirements_total": 4,
+          "requirements_reviewed": 4,
+          "unreviewed": [
+            "Python snippet",
+            "Python behavioral comparison"
+          ]
+        },
+        "check_results": [
+          {
+            "rule_ref": "R1",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          },
+          {
+            "rule_ref": "R2",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          },
+          {
+            "rule_ref": "R3",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          },
+          {
+            "rule_ref": "R4",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          }
+        ],
+        "model": {
+          "used": true,
+          "client": "fake",
+          "error": null
+        }
+      }
+    },
+    {
+      "case_id": "05_missing_rule",
+      "expected": "CHANGES_REQUIRED",
+      "actual": "CHANGES_REQUIRED",
+      "correct": true,
+      "runtime_ms": 0.198,
+      "report": {
+        "status": "CHANGES_REQUIRED",
+        "summary": "Reviewed 3/4",
+        "findings": [
+          {
+            "severity": "warning",
+            "rule_ref": null,
+            "artifact": "code",
+            "location": "function",
+            "evidence": "Unsupported Python comparison",
+            "correction": "Use supported restricted Python"
+          },
+          {
+            "severity": "blocker",
+            "rule_ref": "R2",
+            "artifact": "specification/workflow/code",
+            "location": "rule R2",
+            "evidence": "specification missing; workflow missing",
+            "correction": "Align conditions, actions and order"
+          }
+        ],
+        "coverage": {
+          "requirements_total": 4,
+          "requirements_reviewed": 3,
+          "unreviewed": [
+            "Python snippet",
+            "Python behavioral comparison"
+          ]
+        },
+        "check_results": [
+          {
+            "rule_ref": "R1",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          },
+          {
+            "rule_ref": "R2",
+            "result": "FAIL",
+            "details": [
+              "specification missing",
+              "workflow missing"
+            ]
+          },
+          {
+            "rule_ref": "R3",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          },
+          {
+            "rule_ref": "R4",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          }
+        ],
+        "model": {
+          "used": true,
+          "client": "fake",
+          "error": null
+        }
+      }
+    },
+    {
+      "case_id": "06_precedence_defect",
+      "expected": "CHANGES_REQUIRED",
+      "actual": "CHANGES_REQUIRED",
+      "correct": true,
+      "runtime_ms": 0.221,
+      "report": {
+        "status": "CHANGES_REQUIRED",
+        "summary": "Reviewed 2/4",
+        "findings": [
+          {
+            "severity": "warning",
+            "rule_ref": null,
+            "artifact": "code",
+            "location": "function",
+            "evidence": "Unsupported Python comparison",
+            "correction": "Use supported restricted Python"
+          },
+          {
+            "severity": "blocker",
+            "rule_ref": "R2",
+            "artifact": "specification/workflow/code",
+            "location": "rule R2",
+            "evidence": "specification precedence mismatch; workflow precedence mismatch",
+            "correction": "Align conditions, actions and order"
+          },
+          {
+            "severity": "blocker",
+            "rule_ref": "R3",
+            "artifact": "specification/workflow/code",
+            "location": "rule R3",
+            "evidence": "specification precedence mismatch; workflow precedence mismatch",
+            "correction": "Align conditions, actions and order"
+          }
+        ],
+        "coverage": {
+          "requirements_total": 4,
+          "requirements_reviewed": 2,
+          "unreviewed": [
+            "Python snippet",
+            "Python behavioral comparison"
+          ]
+        },
+        "check_results": [
+          {
+            "rule_ref": "R1",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          },
+          {
+            "rule_ref": "R2",
+            "result": "FAIL",
+            "details": [
+              "specification precedence mismatch",
+              "workflow precedence mismatch"
+            ]
+          },
+          {
+            "rule_ref": "R3",
+            "result": "FAIL",
+            "details": [
+              "specification precedence mismatch",
+              "workflow precedence mismatch"
+            ]
+          },
+          {
+            "rule_ref": "R4",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          }
+        ],
+        "model": {
+          "used": true,
+          "client": "fake",
+          "error": null
+        }
+      }
+    },
+    {
+      "case_id": "07_wrong_destination",
+      "expected": "CHANGES_REQUIRED",
+      "actual": "CHANGES_REQUIRED",
+      "correct": true,
+      "runtime_ms": 0.224,
+      "report": {
+        "status": "CHANGES_REQUIRED",
+        "summary": "Reviewed 3/4",
+        "findings": [
+          {
+            "severity": "warning",
+            "rule_ref": null,
+            "artifact": "code",
+            "location": "function",
+            "evidence": "Unsupported Python comparison",
+            "correction": "Use supported restricted Python"
+          },
+          {
+            "severity": "blocker",
+            "rule_ref": "R3",
+            "artifact": "specification/workflow/code",
+            "location": "rule R3",
+            "evidence": "specification action mismatch; workflow action mismatch",
+            "correction": "Align conditions, actions and order"
+          }
+        ],
+        "coverage": {
+          "requirements_total": 4,
+          "requirements_reviewed": 3,
+          "unreviewed": [
+            "Python snippet",
+            "Python behavioral comparison"
+          ]
+        },
+        "check_results": [
+          {
+            "rule_ref": "R1",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          },
+          {
+            "rule_ref": "R2",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          },
+          {
+            "rule_ref": "R3",
+            "result": "FAIL",
+            "details": [
+              "specification action mismatch",
+              "workflow action mismatch"
+            ]
+          },
+          {
+            "rule_ref": "R4",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          }
+        ],
+        "model": {
+          "used": true,
+          "client": "fake",
+          "error": null
+        }
+      }
+    },
+    {
+      "case_id": "08_code_disagreement",
+      "expected": "CHANGES_REQUIRED",
+      "actual": "INCOMPLETE",
+      "correct": false,
+      "runtime_ms": 0.225,
+      "report": {
+        "status": "INCOMPLETE",
+        "summary": "Reviewed 4/4",
+        "findings": [
+          {
+            "severity": "warning",
+            "rule_ref": null,
+            "artifact": "code",
+            "location": "function",
+            "evidence": "Unsupported Python comparison",
+            "correction": "Use supported restricted Python"
+          }
+        ],
+        "coverage": {
+          "requirements_total": 4,
+          "requirements_reviewed": 4,
+          "unreviewed": [
+            "Python snippet",
+            "Python behavioral comparison"
+          ]
+        },
+        "check_results": [
+          {
+            "rule_ref": "R1",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          },
+          {
+            "rule_ref": "R2",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          },
+          {
+            "rule_ref": "R3",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          },
+          {
+            "rule_ref": "R4",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          }
+        ],
+        "model": {
+          "used": true,
+          "client": "fake",
+          "error": null
+        }
+      }
+    },
+    {
+      "case_id": "09_unsupported_python",
+      "expected": "INCOMPLETE",
+      "actual": "INCOMPLETE",
+      "correct": true,
+      "runtime_ms": 0.165,
+      "report": {
+        "status": "INCOMPLETE",
+        "summary": "Reviewed 4/4",
+        "findings": [
+          {
+            "severity": "warning",
+            "rule_ref": null,
+            "artifact": "code",
+            "location": "function",
+            "evidence": "Expected one if/elif/else chain",
+            "correction": "Use supported restricted Python"
+          }
+        ],
+        "coverage": {
+          "requirements_total": 4,
+          "requirements_reviewed": 4,
+          "unreviewed": [
+            "Python snippet",
+            "Python behavioral comparison"
+          ]
+        },
+        "check_results": [
+          {
+            "rule_ref": "R1",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          },
+          {
+            "rule_ref": "R2",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          },
+          {
+            "rule_ref": "R3",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          },
+          {
+            "rule_ref": "R4",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          }
+        ],
+        "model": {
+          "used": true,
+          "client": "fake",
+          "error": null
+        }
+      }
+    },
+    {
+      "case_id": "10_approval_conflict",
+      "expected": "INCOMPLETE",
+      "actual": "INCOMPLETE",
+      "correct": true,
+      "runtime_ms": 0.043,
+      "report": {
+        "status": "INCOMPLETE",
+        "summary": "Approval/revision ambiguity",
+        "findings": [
+          {
+            "severity": "warning",
+            "evidence": "Conflicting approval records",
+            "artifact": "approvals",
+            "location": "approval records",
+            "correction": "Resolve approval conflict or unsupported patch",
+            "rule_ref": null
+          }
+        ],
+        "coverage": {
+          "requirements_total": 0,
+          "requirements_reviewed": 0,
+          "unreviewed": []
+        },
+        "check_results": []
+      }
+    },
+    {
+      "case_id": "11_approved_change",
+      "expected": "PASS",
+      "actual": "INCOMPLETE",
+      "correct": false,
+      "runtime_ms": 0.22,
+      "report": {
+        "status": "INCOMPLETE",
+        "summary": "Reviewed 4/4",
+        "findings": [
+          {
+            "severity": "warning",
+            "rule_ref": null,
+            "artifact": "code",
+            "location": "function",
+            "evidence": "Unsupported Python comparison",
+            "correction": "Use supported restricted Python"
+          }
+        ],
+        "coverage": {
+          "requirements_total": 4,
+          "requirements_reviewed": 4,
+          "unreviewed": [
+            "Python snippet",
+            "Python behavioral comparison"
+          ]
+        },
+        "check_results": [
+          {
+            "rule_ref": "R1",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          },
+          {
+            "rule_ref": "R2",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          },
+          {
+            "rule_ref": "R3",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          },
+          {
+            "rule_ref": "R4",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          }
+        ],
+        "model": {
+          "used": true,
+          "client": "fake",
+          "error": null
+        }
+      }
+    },
+    {
+      "case_id": "12_instruction_comment",
+      "expected": "PASS",
+      "actual": "INCOMPLETE",
+      "correct": false,
+      "runtime_ms": 0.217,
+      "report": {
+        "status": "INCOMPLETE",
+        "summary": "Reviewed 4/4",
+        "findings": [
+          {
+            "severity": "warning",
+            "rule_ref": null,
+            "artifact": "code",
+            "location": "function",
+            "evidence": "Unsupported Python comparison",
+            "correction": "Use supported restricted Python"
+          }
+        ],
+        "coverage": {
+          "requirements_total": 4,
+          "requirements_reviewed": 4,
+          "unreviewed": [
+            "Python snippet",
+            "Python behavioral comparison"
+          ]
+        },
+        "check_results": [
+          {
+            "rule_ref": "R1",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          },
+          {
+            "rule_ref": "R2",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          },
+          {
+            "rule_ref": "R3",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          },
+          {
+            "rule_ref": "R4",
+            "result": "PASS",
+            "details": [
+              "Equivalent condition/action/order"
+            ]
+          }
+        ],
+        "model": {
+          "used": true,
+          "client": "fake",
+          "error": null
+        }
+      }
+    }
+  ]
+}

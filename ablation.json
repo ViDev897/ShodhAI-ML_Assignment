@@ -1,0 +1,8 @@
+{
+  "mechanism_disabled": "advisory fake-model layer",
+  "same_inputs": true,
+  "status_decisions_unchanged": true,
+  "with_model_accuracy": 0.417,
+  "without_model_accuracy": 0.417,
+  "interpretation": "Fake model adds no demonstrated decision-quality benefit; deterministic engine controls status."
+}
