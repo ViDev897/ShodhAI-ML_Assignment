@@ -5,3 +5,5 @@ Supported conditions: nested AND/OR/NOT, missing, present, eq, neq, gt, gte, lt,
 Rules using ascending order; first match wins. Python is inspected with AST and never executed.
 Limitations: bounded JSON language, restricted Python subset, finite ticket grid; not arbitrary prose/code verification.
 The fake model is reproducibility scaffolding, not live-model performance evidence.
+
+Colab Notebook Link - https://colab.research.google.com/drive/1vzMX0iZfusy9VKMT1XEkjHHebHNm0RCP?usp=sharing
