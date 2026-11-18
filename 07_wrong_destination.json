@@ -1,0 +1,135 @@
+{
+  "case_id": "07_wrong_destination",
+  "expected": "CHANGES_REQUIRED",
+  "bundle": {
+    "requirements": {
+      "rules": [
+        {
+          "id": "R1",
+          "order": 1,
+          "when": {
+            "field": "category",
+            "op": "missing"
+          },
+          "action": "manual_review"
+        },
+        {
+          "id": "R2",
+          "order": 2,
+          "when": {
+            "field": "urgent",
+            "op": "eq",
+            "value": true
+          },
+          "action": "priority_queue"
+        },
+        {
+          "id": "R3",
+          "order": 3,
+          "when": {
+            "field": "waiting_minutes",
+            "op": "gte",
+            "value": 30
+          },
+          "action": "escalation"
+        },
+        {
+          "id": "R4",
+          "order": 4,
+          "when": {
+            "and": []
+          },
+          "action": "normal_queue"
+        }
+      ]
+    },
+    "specification": {
+      "rules": [
+        {
+          "id": "R1",
+          "order": 1,
+          "when": {
+            "field": "category",
+            "op": "missing"
+          },
+          "action": "manual_review"
+        },
+        {
+          "id": "R2",
+          "order": 2,
+          "when": {
+            "field": "urgent",
+            "op": "eq",
+            "value": true
+          },
+          "action": "priority_queue"
+        },
+        {
+          "id": "R3",
+          "order": 3,
+          "when": {
+            "field": "waiting_minutes",
+            "op": "gte",
+            "value": 30
+          },
+          "action": "normal_queue"
+        },
+        {
+          "id": "R4",
+          "order": 4,
+          "when": {
+            "and": []
+          },
+          "action": "normal_queue"
+        }
+      ]
+    },
+    "workflow": {
+      "rules": [
+        {
+          "id": "R1",
+          "order": 1,
+          "when": {
+            "field": "category",
+            "op": "missing"
+          },
+          "action": "manual_review"
+        },
+        {
+          "id": "R2",
+          "order": 2,
+          "when": {
+            "field": "urgent",
+            "op": "eq",
+            "value": true
+          },
+          "action": "priority_queue"
+        },
+        {
+          "id": "R3",
+          "order": 3,
+          "when": {
+            "field": "waiting_minutes",
+            "op": "gte",
+            "value": 30
+          },
+          "action": "normal_queue"
+        },
+        {
+          "id": "R4",
+          "order": 4,
+          "when": {
+            "and": []
+          },
+          "action": "normal_queue"
+        }
+      ]
+    },
+    "code": {
+      "version": "1",
+      "source": "def route(ticket):\n    if ticket.get(\"category\") is None:\n        return \"manual_review\"\n    elif ticket.get(\"urgent\") == True:\n        return \"priority_queue\"\n    elif ticket.get(\"waiting_minutes\") >= 30:\n        return \"escalation\"\n    elif True:\n        return \"normal_queue\"\n"
+    },
+    "approvals": [],
+    "changes": []
+  }
+}
